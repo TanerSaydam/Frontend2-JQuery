@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Slide</title>
+    <style>
+        #panel, #flip{
+            position: relative;
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: 1px solid #c3c3c3;
+            cursor: pointer;
+        }
+
+        #panel{
+            position: absolute;
+            display: none;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQuery Slide</h1>
+    <div id="flip"><h1>Beni Tıklat</h1>
+    
+        <div id="panel"><h1>Hello World</h1></div>
+
+    </div>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam velit itaque reprehenderit et quos ab excepturi explicabo, neque rerum nesciunt exercitationem adipisci nam minus harum maiores repellat vero? Obcaecati.</p>
+    <script src="jquery.js"></script>
+    <script>
+        $("#flip").click(function(){
+            $("#panel").slideToggle(100);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Hide/Show</title>
+</head>
+<body>
+    <h1>Hide/Show</h1>
+    <h2>Element</h2>
+    <button id="hide">Elementi Gizle</button>
+    <button id="show">Elementi Göster</button>
+    <script src="jquery.js"></script>
+
+    <script>
+        $("#hide").on("click",function(){
+            $("h2").hide();
+        });
+
+        $("#show").click(function(){
+            $("h2").show();
+        })
+    </script>
+</body>
+</html>

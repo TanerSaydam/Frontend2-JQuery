@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Selectors</title>
+    <style>
+        table{
+            border: 1px solid;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table th, table td{
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selectors</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Syntax</th>
+                <th>Açıklaması</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>$("*")</td>
+                <td>Tüm elementleri seçer</td>
+            </tr>
+            <tr>
+                <td>$(this)</td>
+                <td>Mevcut elementi seçer</td>
+            </tr>
+            <tr>
+                <td>$("p.intro")</td>
+                <td>P elementleri içerisinde "intro" classına sahip olanları seçer</td>
+            </tr>
+            <tr>
+                <td>$(p:first)</td>
+                <td>İlk p elementini seçer</td>
+            </tr>
+            <tr>
+                <td>$(ul li:first)</td>
+                <td>Ul elementi içerisindeki ilk li elementini seçer</td>
+            </tr>
+            <tr>
+                <td>$("[href]")</td>
+                <td>Tüm elementlerde href attribute kullanınları seçer</td>
+            </tr>
+            <tr>
+                <td>$(":button")</td>
+                <td>Tüm elementler içerisinde button elementleri ve inputlar içerisinde de type button olanları seçer</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- <input type="button" value="deneme"> -->
+
+    <script>
+        $("button").on("click",function(){
+            $(this) // butonu seçer
+        });
+    </script>
+</body>
+</html>

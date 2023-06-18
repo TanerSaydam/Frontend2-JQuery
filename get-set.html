@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Get/Set</title>
+</head>
+<body>
+    <h1>JQuery Get/Set</h1>
+    <input id="test" type="text" value="Taner Saydam">
+    <h2>Hello World!</h2>
+
+    <script src="jquery.js"></script>
+    <script>
+        let element = document.getElementById("test");
+        console.log(element.value);
+
+        $("#test").val("asda");
+
+        let h2Elementi = document.querySelector("h2");
+        console.log(h2Elementi.innerText());
+
+        $("h2").text();
+        $("h2").html();
+
+        // let inputValue = $("input").val();
+        // console.log(inputValue);
+
+        // let h2Value = $("h2").text();
+        // console.log(h2Value);
+
+        // $("input").val("Ahmet");
+
+        // $("h2").html("<br>Hello Ahmet!</br>");
+    </script>
+</body>
+</html>

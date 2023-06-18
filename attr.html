@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Attribute</title>
+</head>
+<body>
+    <h1>JQuery Attribute</h1>
+    <a class="form-control">Link</a>
+
+    <script src="jquery.js"></script>
+    <script>
+        $("a").attr("href","#");
+        $("a").removeAttr("href");
+        $("a").addClass("test");
+        $("a").removeClass("test")
+        $("a").css({"background-color":"red","font-size":"18px"})
+    </script>
+</body>
+</html>
